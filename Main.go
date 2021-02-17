@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello GO!")
+	for x := 65; x < 91; x++ {
+		fmt.Printf("ASCII Char for No %v = %#U\n", x, x)
+	}
 }
